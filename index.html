@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce de Perfumes</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Integración de una librería: SweetAlert2 para notificaciones agradables -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <h1>Perfumería Elegante</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="productos">
+        <h2>Perfumes Disponibles</h2>
+        <div id="perfume-list" class="product-grid">
+            <!-- Los productos serán generados aquí -->
+        </div>
+    </section>
+
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <div id="carrito-list">
+            <!-- El carrito se mostrará aquí -->
+        </div>
+        <button id="finalizar-compra">Finalizar Compra</button>
+        <p id="mensaje-compra"></p>
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
