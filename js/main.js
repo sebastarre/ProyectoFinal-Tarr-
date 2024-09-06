@@ -1,5 +1,5 @@
 // Array para almacenar los productos cargados desde un JSON local o API externa
-// let perfumes = [];
+let perfumes = [];
 
 // Variable para el carrito
 let carrito = [];
@@ -7,7 +7,7 @@ let carrito = [];
 // Función para cargar los productos desde un JSON local usando fetch
 async function cargarProductos() {
     try {
-        const response = await fetch('/data/perfumes.json'); // JSON local con productos
+        const response = await fetch('./data/perfumes.json'); // JSON local con productos
         perfumes = await response.json();
         mostrarProductos();
     } catch (error) {
@@ -97,27 +97,3 @@ document.getElementById('finalizar-compra').addEventListener('click', () => {
 
 // Cargar los productos desde el JSON al iniciar la página
 cargarProductos();
-
-const perfumes = [
-    {
-        "id": 1,
-        "nombre": "Chanel Nº5",
-        "precio": 120,
-        "imagen": "https://via.placeholder.com/150"
-    },
-    {
-        "id": 2,
-        "nombre": "Dior Sauvage",
-        "precio": 100,
-        "imagen": "https://via.placeholder.com/150"
-    },
-    {
-        "id": 3,
-        "nombre": "Acqua di Gio",
-        "precio": 110,
-        "imagen": "https://via.placeholder.com/150"
-    }
-];
-
-// Llamar directamente a mostrarProductos
-mostrarProductos();
