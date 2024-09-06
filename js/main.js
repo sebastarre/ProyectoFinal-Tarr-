@@ -1,5 +1,5 @@
 // Array para almacenar los productos cargados desde un JSON local o API externa
-let perfumes = [];
+// let perfumes = [];
 
 // Variable para el carrito
 let carrito = [];
