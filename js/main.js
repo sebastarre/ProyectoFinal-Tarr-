@@ -97,3 +97,27 @@ document.getElementById('finalizar-compra').addEventListener('click', () => {
 
 // Cargar los productos desde el JSON al iniciar la página
 cargarProductos();
+
+const perfumes = [
+    {
+        "id": 1,
+        "nombre": "Chanel Nº5",
+        "precio": 120,
+        "imagen": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 2,
+        "nombre": "Dior Sauvage",
+        "precio": 100,
+        "imagen": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 3,
+        "nombre": "Acqua di Gio",
+        "precio": 110,
+        "imagen": "https://via.placeholder.com/150"
+    }
+];
+
+// Llamar directamente a mostrarProductos
+mostrarProductos();
